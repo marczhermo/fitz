@@ -1,0 +1,13 @@
+vendor
+bower_components
+composer.phar
+node_modules
+mailoutput
+.idea
+.tmp
+.sass-cache
+.DS_Store
+Thumbs.db
+/bootstrap/compiled.php
+.env.*.php
+.env.php

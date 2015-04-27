@@ -1,0 +1,20 @@
+{
+  "name": "lab1521/fitz",
+  "description": "Fitz Micro Framework",
+  "keywords": ["micro", "framework", "php", "study"],
+  "license": "MIT",
+  "type": "project",
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "phpspec/phpspec": "~2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fitz\\": "Fitz/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "vendor-dir" : "vendor"
+  }
+}
