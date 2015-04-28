@@ -14,5 +14,6 @@
  */
 require_once __DIR__.'/../vendor/autoload.php';
 //Boot up application framework
-$app = new \Fitz\Application;
+$fitz = new \Fitz\Application;
+//$fitz->server();
 //End nothing below here
