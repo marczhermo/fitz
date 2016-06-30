@@ -1,0 +1,5 @@
+suites:
+  fitz_suite:
+    # . means current directory where phpspec.yml file is located
+    src_path: .
+    spec_prefix: spec

@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Forbid access to these files and directories
+    RewriteRule ^vendor(/|$) - [F,L,NC]
+    RewriteRule ^node_modules(/|$) - [F,L,NC]
+    RewriteRule ^bower_components(/|$) - [F,L,NC]
+    RewriteRule composer\.(json|lock) - [F,L,NC]
+
+    # Redirect Trailing Slashes...
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
